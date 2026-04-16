@@ -1,144 +1,200 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — PRO JET BOX</title>
-  <meta name="description" content="Parlez-nous de votre projet et choisissez votre offre de lancement ou vos options complémentaires.">
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="theme-color" content="#0b1d4a">
-  <meta name="application-name" content="PRO JET BOX">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="PRO JET BOX">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | PROJETBOX</title>
+  <meta
+    name="description"
+    content="Contactez PROJETBOX pour parler de votre projet de site web professionnel et recevoir une proposition adaptée à votre activité."
+  />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-<header class="site-header">
-  <div class="container header-inner">
-    <a href="index.html" class="brand">
-      <span class="brand-logo-wrap"><img src="logo-projetbox.png" alt="Logo PRO JET BOX" class="brand-logo"></span>
-      <span class="brand-text">
-        <span class="brand-main">PRO <span>JET</span> BOX</span>
-      </span>
-    </a>
-    <nav class="desktop-nav">
-      <a href="nos-box.html">Nos box</a>
-      <a href="tarifs.html">Nos offres</a>
-      <a href="financement.html">Financement</a>
-      <a href="contact.html" class="btn btn-primary small">Demander ma box</a>
-    </nav>
-    <button class="menu-btn" aria-label="Ouvrir le menu" data-menu-btn>☰</button>
-  </div>
-  <div class="mobile-nav" data-mobile-nav>
-    <div class="container mobile-nav-inner">
-      <a href="nos-box.html">Nos box</a>
-      <a href="tarifs.html">Nos offres</a>
-      <a href="financement.html">Financement</a>
-      <a href="contact.html">Contact</a>
-      <a href="contact.html" class="btn btn-primary">Demander ma box</a>
-    </div>
-  </div>
-</header>
+  <header class="topbar">
+    <div class="nav">
+      <a href="index.html" class="brand">
+        <span class="brand-badge">P</span>
+        <span>PROJETBOX</span>
+      </a>
 
-<main>
-  <section class="page-hero page-hero-img" style="--hero-img:url(images/contact-hero.jpg)">
+      <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="nos-box.html">Nos box</a>
+        <a href="tarifs.html">Tarifs</a>
+        <a href="financement.html">Financement</a>
+        <a href="contact.html" class="nav-cta">Demander un devis</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div>
+          <span class="badge">Parlons de votre projet</span>
+          <h1>Contactez PROJETBOX pour créer un site plus pro, plus clair et plus vendeur</h1>
+          <p>
+            Décrivez simplement votre activité, vos objectifs et le type de rendu que
+            vous recherchez. Nous reviendrons vers vous avec une proposition adaptée
+            à votre besoin.
+          </p>
+
+          <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:24px;">
+            <a href="#formulaire-contact" class="btn-primary">Remplir le formulaire</a>
+            <a href="nos-box.html" class="btn-secondary">Voir les box</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h3>Pourquoi nous contacter ?</h3>
+          <p>
+            Un bon échange permet de mieux comprendre votre métier et de vous proposer
+            une solution cohérente, sans complexité inutile.
+          </p>
+          <ul style="list-style:none; padding:0; margin:20px 0 0; display:grid; gap:12px;">
+            <li>Une orientation simple et claire</li>
+            <li>Une formule adaptée à votre activité</li>
+            <li>Une vision plus précise du rendu attendu</li>
+            <li>Une proposition construite selon votre besoin</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="formulaire-contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Présentez-nous votre projet</h2>
+          <p>
+            Remplissez ce formulaire avec les informations essentielles. Plus votre demande
+            est claire, plus la proposition pourra être pertinente.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3 style="margin-bottom:20px;">Formulaire de contact</h3>
+
+            <form action="#" method="post">
+              <div>
+                <label for="nom" style="display:block; margin-bottom:8px; font-weight:700;">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+              </div>
+
+              <div>
+                <label for="prenom" style="display:block; margin-bottom:8px; font-weight:700;">Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required />
+              </div>
+
+              <div>
+                <label for="entreprise" style="display:block; margin-bottom:8px; font-weight:700;">Entreprise / activité</label>
+                <input type="text" id="entreprise" name="entreprise" placeholder="Nom de votre activité" />
+              </div>
+
+              <div>
+                <label for="email" style="display:block; margin-bottom:8px; font-weight:700;">Email</label>
+                <input type="email" id="email" name="email" placeholder="Votre adresse email" required />
+              </div>
+
+              <div>
+                <label for="telephone" style="display:block; margin-bottom:8px; font-weight:700;">Téléphone</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="Votre numéro" />
+              </div>
+
+              <div>
+                <label for="box" style="display:block; margin-bottom:8px; font-weight:700;">Formule souhaitée</label>
+                <select id="box" name="box">
+                  <option value="">Choisir une formule</option>
+                  <option value="standard">Box Standard</option>
+                  <option value="premium">Box Premium</option>
+                  <option value="a_definir">À définir ensemble</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="message" style="display:block; margin-bottom:8px; font-weight:700;">Votre besoin</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="Décrivez votre activité, vos objectifs et le type de site souhaité"
+                  required
+                ></textarea>
+              </div>
+
+              <div style="padding-top:8px;">
+                <button type="submit" class="btn-primary">Envoyer ma demande</button>
+              </div>
+            </form>
+          </div>
+
+          <div style="display:grid; gap:20px;">
+            <article class="card">
+              <h3>Ce que vous pouvez nous préciser</h3>
+              <p style="margin-bottom:14px;">
+                Pour recevoir une proposition plus pertinente, vous pouvez indiquer :
+              </p>
+              <ul>
+                <li>Votre métier ou secteur d’activité</li>
+                <li>Le type de clients que vous ciblez</li>
+                <li>L’image que vous voulez donner</li>
+                <li>Le niveau de gamme souhaité</li>
+                <li>Le nombre de pages envisagé</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Un projet simple ou premium ?</h3>
+              <p>
+                Si vous hésitez entre une formule standard et une formule premium,
+                expliquez simplement votre besoin. Nous vous aiderons à choisir
+                la solution la plus cohérente.
+              </p>
+              <div style="margin-top:18px;">
+                <a href="tarifs.html" class="btn-secondary">Comparer les formules</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>Besoin d’un financement ?</h3>
+              <p>
+                Si vous souhaitez étaler votre projet, vous pouvez aussi consulter
+                la page financement avant de nous contacter.
+              </p>
+              <div style="margin-top:18px;">
+                <a href="financement.html" class="btn-secondary">Voir le financement</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="hero-card">
+          <h2>Vous avez déjà une idée précise de votre site ?</h2>
+          <p>
+            Décrivez-nous votre activité, le style souhaité et votre objectif principal.
+            Nous construirons une proposition adaptée à votre image.
+          </p>
+          <div style="margin-top:24px;">
+            <a href="#formulaire-contact" class="btn-primary">Commencer maintenant</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
     <div class="container">
-      <span class="eyebrow">Contact</span>
-      <h1>Parlez-nous de votre projet</h1>
-      <p>Expliquez-nous votre activité, l’offre souhaitée et les éventuelles options complémentaires. Nous revenons vers vous avec une proposition claire et adaptée.</p>
+      <p>© 2026 PROJETBOX — Contactez-nous pour construire un site web professionnel adapté à votre activité.</p>
     </div>
-  </section>
+  </footer>
 
-  <section class="section">
-    <div class="container contact-layout">
-      <div class="contact-info">
-        <h2>Parlez-nous de votre projet</h2>
-        <p>Expliquez-nous votre activité, l’offre visée et le niveau d’accompagnement souhaité. Nous revenons vers vous rapidement avec une réponse claire et adaptée.</p>
-        <div class="feature-list">
-          <div class="feature-item"><strong>Réponse orientée métier</strong><span>Nous partons de vos besoins concrets, pas d’un modèle générique.</span></div>
-          <div class="feature-item"><strong>Maintenance sans engagement</strong><span>1 modification par mois incluse et garantie de fonctionnement du site selon l’offre choisie.</span></div>
-          <div class="feature-item"><strong>2 offres de lancement</strong><span>Nous vous orientons rapidement vers BOX Essentiel ou BOX Sur mesure selon votre besoin.</span></div>
-          <div class="feature-item"><strong>Contact direct</strong><span>Vous pouvez aussi nous écrire à <a href="mailto:contact@projetbox.fr">contact@projetbox.fr</a> ou nous contacter sur <a href="https://wa.me/33624218525" target="_blank" rel="noopener">WhatsApp</a>.</span></div>
-        </div>
-      </div>
-
-      <form class="contact-form" action="https://formspree.io/f/xykbwqwo" method="POST" data-ajax-form data-success-url="merci.html">
-        <input type="hidden" name="_subject" value="Nouvelle demande PRO JET BOX">
-        <div class="form-grid">
-          <label>Nom<input type="text" name="nom" required></label>
-          <label>Téléphone<input type="tel" name="telephone"></label>
-          <label>Email<input type="email" name="email" required></label>
-          <label>Activité
-            <select name="activite">
-              <option>Restaurant</option>
-              <option>VTC / Chauffeur privé</option>
-              <option>Entreprises & bureaux</option>
-              <option>Commerce de détail</option>
-              <option>Métiers du bâtiment</option>
-              <option>Serrurier</option>
-              <option>Nettoyage & entretien</option>
-              <option>Beauté & bien-être</option>
-              <option>Fleuriste</option>
-              <option>Coiffure & barbier</option>
-              <option>Avocat</option>
-              <option>Photographe</option>
-              <option>Autre métier</option>
-            </select>
-          </label>
-          <label class="full">Si autre métier, précisez<input type="text" name="autre_metier"></label>
-          <label class="full">Besoin principal
-            <select name="besoin">
-              <option>BOX Essentiel à 490€ HT</option>
-              <option>BOX Sur mesure à 890€ HT</option>
-              <option>Refaire mon site actuel</option>
-              <option>Demander statuts / PV AG</option>
-              <option>Demander un business plan</option>
-              <option>Demander un accompagnement partenaire financier</option>
-            </select>
-          </label>
-          <label class="full">Message<textarea name="message" rows="6"></textarea></label>
-        </div>
-        <div class="cta-inline">
-          <button class="btn btn-primary" type="submit" data-submit-btn>Envoyer ma demande</button>
-          <a href="mailto:contact@projetbox.fr" class="btn btn-secondary">contact@projetbox.fr</a>
-          <a href="https://wa.me/33624218525" target="_blank" rel="noopener" class="btn btn-gold">WhatsApp</a>
-        </div>
-        <p class="form-status" data-form-status aria-live="polite"></p>
-      </form>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <div class="brand footer-brand">
-        <span class="brand-logo-wrap"><img src="logo-projetbox.png" alt="Logo PRO JET BOX" class="brand-logo"></span>
-        <span class="brand-text">
-          <span class="brand-main">PRO <span>JET</span> BOX</span>
-        </span>
-      </div>
-      <p>Des box métier pensées pour vous aider à démarrer avec une présence plus claire, plus professionnelle et plus crédible.</p>
-    </div>
-    <div>
-      <h4>Navigation</h4>
-      <a href="index.html">Accueil</a>
-      <a href="nos-box.html">Nos box</a>
-      <a href="tarifs.html">Nos offres</a>
-      <a href="financement.html">Financement</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div>
-      <h4>Contact</h4>
-      <a href="mailto:contact@projetbox.fr">contact@projetbox.fr</a>
-      <a href="https://wa.me/33624218525" target="_blank" rel="noopener">WhatsApp : +33 6 24 21 85 25</a>
-    </div>
-  </div>
-</footer>
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
